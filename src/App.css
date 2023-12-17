@@ -1,38 +1,151 @@
+/* .hex-codes {
+  brown: #8a5530
+  black: #202120
+  mattix-red: #fb0754
+  orange: #ef8741
+  blue: #3c549b
+  pink: #fb4e86
+  yellow: #edc660
+  salmon: #f57666
+  light-pink: #f494b6
+  dark-pink: #981740
+  off-white: #fefffe
+} */
+
+
+
+/* font-size: 75% === 12px
+/* npm stAdjust html font-size in media query to change all em values*/ */
+
+
+html {
+   font-size: 75%; 
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: fit-content;
+  max-height: 100vh;
+  overflow-x: hidden;
+  /* overflow-x: auto;
+  scroll-behavior: smooth */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home {
+  background-color: #fb0754;
+  color: #fefffe;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-container {
 }
 
-.App-header {
-  background-color: #282c34;
+.case-studies {
+  height: 100%;
+  width: 75vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cs-container {
+  width: 50%;
+  height: 50%;
+}
+
+.card {
+  border: 1px solid white;
+  border-top: none;
+  border-right: none;
+  box-sizing: border-box;
+  background-color:#f57666;
+  height: 100%;
+  width: 100%; 
+  
+}
+
+/* Media Queries */
+@media only screen and (max-device-width: 480px) {
+	html { font-size: 100%; }
+}
+
+
+
+
+
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* section:nth-child(even) {
+  background-color: teal;
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.read-article{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  color: #000;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: arial;
+  text-decoration: none;
+  box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px -15px;
+}
+.read-article:hover{
+    background: #d5d5d5;
+    box-shadow: rgb(50 50 93 / 25%) 0 0 100px -20px, rgb(0 0 0 / 30%) 0 0 60px 0px;
+}
+iframe[sandbox] .read-article{
+  display: none;
 }

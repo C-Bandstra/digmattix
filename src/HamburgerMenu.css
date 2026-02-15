@@ -1,0 +1,69 @@
+.navbar {
+    /* background-color: #333; */
+    padding: 10px 10px;
+    position: relative; /* Key: makes the nav-links position relative to navbar */
+    margin-left: auto;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    cursor: pointer;
+    position: relative; /* Ensures nav-links are positioned relative to this */
+    z-index: 2;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Animate bars when menu is open */
+  .bar.change:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .bar.change:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.change:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+  }
+  
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #eee;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    background: white;
+    list-style: none;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: max-content;
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 0px;
+  }
+  
+  .nav-links.open {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    pointer-events: auto;
+  }
+  

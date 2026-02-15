@@ -1,0 +1,56 @@
+/* ALL CSS FOR SHOP AND ITS CHILDREN */
+
+
+.shop-item-img-container {
+  border: 1px solid black;
+  height: 40vh;
+}
+
+.shop-item-options {
+  display: flex;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.shop-item-option {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex: 0 0 calc(50% - 0.4rem);
+    height: 2rem;
+}
+
+.shop-color-price {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.shop-item-selected {
+  border: 1px solid black;
+}
+
+.colorway-container {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  margin-top: 0.8rem;
+  padding: 0px;
+}
+.colorway-option {
+  /* padding: 5px; */
+  /* flex: 0 0 25%; */
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.colorway-img {
+
+}
+
+.shop-item-description {
+  font-size: 12px;
+}

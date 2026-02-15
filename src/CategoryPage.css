@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  border-top: 1px solid #20202070;
+  border-left: 1px solid #20202070;
+}
+
+.grid-item-placeholder {
+  border-right: 1px solid #20202070;
+  border-bottom: 1px solid #20202070;
+  padding: 1rem;
+  background-color: white;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh; /* roughly 3.5–4.5 items per screen */
+  border-right: 1px solid #20202070;
+  border-bottom: 1px solid #20202070;
+  overflow: hidden;
+}
+
+.grid-item-image {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-item-name {
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.grid-item-price {
+  font-size: 0.85rem;
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  color: #333;
+}

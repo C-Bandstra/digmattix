@@ -1,0 +1,16 @@
+.content-card {
+  flex: 0 0 auto;
+  height: 20vw;
+  width: 20vw;
+  border: 2px solid #fb0754;
+  border-top: none;
+  margin: 10px 5px;
+}
+
+
+@media (min-width: 1281px) {
+ /* .content-card {
+  width: 30vw;
+  height: 30vw;
+ } */
+}

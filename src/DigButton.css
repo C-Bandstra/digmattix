@@ -1,0 +1,21 @@
+.dig-btn-container {
+    max-width: 200px;
+    position: relative;
+    top: 25px;
+    z-index: 10
+    ;
+}
+
+
+.lets-dig-btn {
+    border: none;
+    position: relative;
+    top: 15px;
+    font-size: 24px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.h-shovel-decor {
+    width: 100%;
+}
